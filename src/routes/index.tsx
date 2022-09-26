@@ -3,7 +3,7 @@ import type { DocumentHead } from '@builder.io/qwik-city';
 import { Link } from '@builder.io/qwik-city';
 import { CariSemua } from '~/components/index/cari-semua';
 import { Carousel } from '~/components/index/carousel';
-import { Cod } from '~/components/index/cod';
+import { Cod } from '~/components/index/bayar-ditempat';
 import { DaftarTokopedia } from '~/components/index/daftar-tokopedia';
 import { KemudahanJualanTokopedia } from '~/components/index/daftar-tokopedia/kemudahan';
 import { ElektronikPilihan } from '~/components/index/elektronik';
