@@ -18,6 +18,7 @@ export default component$(() => {
         <meta charSet="utf-8" />
         <RouterHead />
       </head>
+      {/* <body lang="en" style="overflow:hidden;"> */}
       <body lang="en">
         <RouterOutlet />
         <ServiceWorkerRegister />

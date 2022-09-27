@@ -18,7 +18,7 @@ export const Cod = component$(() => {
                         <a href='#'>
                             <img class="p-2 rounded-t-lg" src={produk.foto_produk} alt="product image" />
                             <div class="px-2 pb-2 space-y-1">
-                                <h5 class="tracking-tight text-gray-900 dark:text-white">{produk.nama_produk}</h5>
+                                <h5 class="truncate tracking-tight text-gray-900 dark:text-white">{produk.nama_produk}</h5>
                                 <div class="flex justify-between items-center">
                                     <span class="text-xl font-medium text-gray-900 dark:text-white">{produk.harga_produk}</span>
                                 </div>
