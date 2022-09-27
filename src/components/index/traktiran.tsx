@@ -1,53 +1,53 @@
 import { component$, useClientEffect$, useStore } from '@builder.io/qwik';
 // import { CountDown } from './copy';
 
-export const CountDown = component$(() => {
-    const time = new Date;
+// export const CountDown = component$(() => {
+//     const time = new Date;
 
-    interface state {
-        hour: number,
-        minute: number,
-        second: number,
+//     interface state {
+//         hour: number,
+//         minute: number,
+//         second: number,
 
-    }
+//     }
 
-    const state = useStore({
-        hour: 1,
-        minute: 2,
-        second: 3,
-        // hour: time.getHours(),
-        // minute: time.getMinutes(),
-        // second: time.getSeconds(),
-    });
+//     const state = useStore({
+//         hour: 1,
+//         minute: 2,
+//         second: 3,
+//         // hour: time.getHours(),
+//         // minute: time.getMinutes(),
+//         // second: time.getSeconds(),
+//     });
 
-    useClientEffect$(() => {
-        const interval = setInterval(() => {
-            if (state.hour != 0) {
-                state.second--;
-                if (state.second == '0') {
-                    state.minute--
-                    state.second = 60
-                }
-                if (state.minute == '0') {
-                    state.hour--
-                    state.minute = 60
-                }
-                if (state.hour == '0') {
-                    state.hour = 0
-                    state.minute = 0
-                    state.second = 0
-                }
-            }
-        }, 1000);
-        return () => clearInterval(interval);
-    });
+//     useClientEffect$(() => {
+//         const interval = setInterval(() => {
+//             if (state.hour != 0) {
+//                 state.second--;
+//                 if (state.second == '0') {
+//                     state.minute--
+//                     state.second = 60
+//                 }
+//                 if (state.minute == '0') {
+//                     state.hour--
+//                     state.minute = 60
+//                 }
+//                 if (state.hour == '0') {
+//                     state.hour = 0
+//                     state.minute = 0
+//                     state.second = 0
+//                 }
+//             }
+//         }, 1000);
+//         return () => clearInterval(interval);
+//     });
 
-    return (
-        <>
-            <div>{state.hour} : {state.minute} : {state.second}</div>
-        </>
-    );
-});
+//     return (
+//         <>
+//             <div>{state.hour} : {state.minute} : {state.second}</div>
+//         </>
+//     );
+// });
 
 export const Traktiran = component$(() => {
 
@@ -59,7 +59,7 @@ export const Traktiran = component$(() => {
                     <h2 class="text-gray-500" data-testid="">Berakhir Dalam</h2>
                 </div>
 
-                <CountDown />
+                {/* <CountDown /> */}
 
                 <div class="css-fcoe5x">
                     <a class="text-base font-bold text-green-600"
